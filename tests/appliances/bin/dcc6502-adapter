@@ -19,6 +19,4 @@ f.close()
 
 lines = [line for line in check_output("dcc6502 -o 2061 {}".format(filename), shell=True).split('\n') if line and not line.startswith(';')]
 lines = [re.sub(r'\s*\;.*$', '', line) for line in lines]
-if "BRK" in lines[-1]:
-    lines.pop()
 sys.stdout.write('\n'.join(lines))
