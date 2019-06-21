@@ -14,4 +14,6 @@ blocks:
           commands:
             - checkout
             - git clone https://github.com/catseye/Falderal
-            - PATH=Falderal/bin:$PATH ./test.sh
+            - git clone https://github.com/catseye/dcc6502
+            - (cd dcc6502 && make)
+            - PATH=dcc6502:Falderal/bin:$PATH ./test.sh
