@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # script that allows the binary output of sixtypical --output-format=c64-basic-prg --compile to be
 # disassembled by https://github.com/tcarmelveilleux/dcc6502
