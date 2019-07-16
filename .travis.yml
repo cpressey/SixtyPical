@@ -1,8 +1,9 @@
 language: python
 python:
-- "3.4"
-script:
+- "3.5"
+install:
 - git clone https://github.com/catseye/Falderal
 - git clone https://github.com/catseye/dcc6502
 - (cd dcc6502 && make)
+script:
 - PATH=dcc6502:Falderal/bin:$PATH ./test.sh
